@@ -16,7 +16,6 @@ return new class extends Migration
             $table->int('user_id');
             $table->foreing('user_id')->references('id')->on('users');
             $table->int('service');
-            $table->date();
             $table->timestamps();
         });
     }
